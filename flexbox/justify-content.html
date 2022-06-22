@@ -39,9 +39,15 @@
         .space-around{
             justify-content: space-around;
         }
+
+        .column{
+            flex-direction: column;
+            min-height:200px;
+        }
     </style>
 </head>
 <body>
+    <h1>Comportamento em row</h1>
     <h1>Flex-start</h1>
     <section class="container flex-start">
         <div class="item">1</div>
@@ -76,6 +82,53 @@
 
     <h1>Space-around</h1>
     <section class="container space-around">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">Outro item</div>
+        <div class="item">Outro item1</div>
+        <div class="item">Outro item2</div>
+    </section>
+
+    <h1>Column</h1>
+
+    <h1>Flex-start (column)</h1>
+    <section class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">Outro item</div>
+        <div class="item">Outro item1</div>
+        <div class="item">Outro item2</div>
+    </section>
+
+    <h1>Flex-end (column)</h1>
+    <section class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">Outro item</div>
+        <div class="item">Outro item1</div>
+        <div class="item">Outro item2</div>
+    </section>
+
+    <h1>center (column)</h1>
+    <section class="container center column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">Outro item</div>
+        <div class="item">Outro item1</div>
+        <div class="item">Outro item2</div>
+    </section>
+
+    <h1>space-between (column)</h1>
+    <section class="container space-between column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">Outro item</div>
+        <div class="item">Outro item1</div>
+        <div class="item">Outro item2</div>
+    </section>
+
+    <h1>space-around (column)</h1>
+    <section class="container space-around column">
         <div class="item">1</div>
         <div class="item">item 2</div>
         <div class="item">Outro item</div>
