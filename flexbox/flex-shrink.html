@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Shrink</title>
+    <style>
+        .flex-container{
+            display:flex;
+            border:1px solid black;
+            max-width: 350px;
+            margin-bottom:10px;
+        }
+
+        .item{
+            margin:5px;
+            background-color: orangered;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .sh-1{
+            flex-shrink: 1;
+        }
+
+        .sh-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+
+        .sh-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+            
+        }
+
+        .sh-3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <!--Com o flex-shrink ele independente da quantidade de itens, os próprios itens com essa propriedade vão se comprimindo dentro do container para caber nele-->
+    <p>flex-shrink:1</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">Lorem ipsum dolor amet</div><!--Quando houver a quebra de linha eu perco o meu grow porquê eu não tenho mais espaço para distribuir-->
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <!--O flex-shrink no 0 eu tenho que usar um flex-basis junto definindo o tamanho, se eu colocar 100px no basis, eu estou dizendo que o tamanho mínimo que meu item
+    de possuir é 100 px que ocasiona na quebra do espaço do container no caso de 100px-->
+    <p>flex-shrink:0</p>
+    <div class="flex-container">
+        <div class="item sh-0 fg-1">A</div>
+        <div class="item sh-0 fg-1">Lorem ipsum dolor amet Lorem ipsum dolor amet</div>
+        <div class="item sh-0 fg-1">C Lorem ipsum dolor amet Lorem ipsum dolor amet</div>
+        <div class="item sh-0 fg-1">D</div>
+    </div>
+
+    <p>flex-shrink:mix / com basis definido</p>
+    <div class="flex-container">
+        <div class="item sh-1 fg-1">A</div>
+        <div class="item sh-2 fg-1">Lorem ipsum dolor amet</div>
+        <div class="item sh-2 fg-1">C Lorem ipsum dolor amet</div>
+        <div class="item sh-3 fg-1">D</div>
+    </div>
+</body>
+</html>
