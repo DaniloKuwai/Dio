@@ -1,0 +1,43 @@
+Nas preferências podemos:
+
+-> alterar o tamanho da fonte
+->tab size: define onde o cursor vai ficar(identação)
+nada mais é que o espaço que dá quando você da enter
+->auto-save: para salvar automaticamente
+->cursor também dá para alterar 
+-> word wrap: Quebra de linha
+
+
+para configurar atalhos do teclado ir em arquivo
+-> preferencias
+-> atalhos do teclado
+
+---------------------------------------
+
+Aula 3
+
+uma extensão legal é o icons, vai deixar o desenho de arquivos com desenhos diferentes
+
+no desenho de filtro também podemos clicar em temas, e escolher alguns temas de acordo com a linguagem que vamos programar e existem até alguns inspetores de códigos que vão analisar seu código para ver erros dependendo da linguagem e temas.
+
+----------------------------
+Abrir um terminal
+
+ir em terminal
+-> novo terminal
+vai abrir o terminal
+
+-> ai vem os comandos básicos
+
+ls (ver as pastas)
+mkdir(criar pastas)
+cd nome da pasta(entrar na pasta)
+
+-> quando a instalação do vscode se você marcou a opção do path, em qualquer cmd ou terminal podemos digitar
+
+code -> vai abrir o vscode
+code teste.html, vai abrir no teste.html dentro do vscode
+
+------------------------------------
+
+se tiver usando git pode digitar no próprio terminal
