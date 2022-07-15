@@ -57,3 +57,13 @@ frase.endsWith("?"")
 
 
 */
+
+/*
+----------------------------------------------------------
+
+*/
+
+/*
+frase.replace("," , "!")
+vai subsituir a vírgula pelo ponto de exclamação.
+*/
