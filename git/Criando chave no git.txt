@@ -1,0 +1,18 @@
+Criando chave ssh no git
+
+-> 1º passo: ssh-keygen -t ed25519(tipo de criptografia) -C e-mailquevoceutiliza.com.br
+
+ele vai aparecer um local onde as chaves vão ficar, não coloque nada e de um enter
+
+vai pedir para definir uma senha, coloque e confirme novamente.
+
+-> 2º passo: acessar o arquivo no local onde foi criado(que apareceu anteriormente), vão ser criados 2 chaves, a chave que você vai pegar vai ser o do arquivo .pub, após copiar e colar a chave, ir em settings, ir na opção de chave e colocar no github a nova chave.
+
+-> 3º passo: Vamos inicializar a entidade ssh_agent 
+
+-> para inicializar -> evan $(ssh-agent -s)
+vai aparecer um pid, que é o número do processo.
+
+
+-> 4º passo: Agora podemos para testar, podemos clonar um dos nossos repositórios para ver se está correto.
+
