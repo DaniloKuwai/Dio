@@ -10,7 +10,7 @@ vai pedir para definir uma senha, coloque e confirme novamente.
 
 -> 3º passo: Vamos inicializar a entidade ssh_agent 
 
--> para inicializar -> evan $(ssh-agent -s)
+-> para inicializar -> eval $(ssh-agent -s)
 vai aparecer um pid, que é o número do processo.
 
 
