@@ -302,5 +302,196 @@ Características:
 -> Url rewriting and redirection[35][36]
 _________________________________________________________________
 
+                                   HTTPS - O que muda no protocolo?
+
+aula 06 - Conceitos básicos de segurança da informação
+
+Criptografia por chave - Basicamente temos um arquivo por chave e só conseguimos desbloquer o conteúdo dele por chaves
+
+Temos 2 tipos:
+
+__________________________________________________________________________________________________
+
+- Assimétrica:
+
+Nela temos 2 chaves:
+
+Chave Privada
+Chave Pública
+
+____________________________________________________________________________________________________
+- Simétrica
+
+temos apenas uma chave, é apenas uma chave para conseguir descriptografar.
+
+Dentro da criptografia da chave simétrica tempo 2 tipos
+
+-> Cifra de fluxo
+-> Cifra de bloco -> SSL, PGP,Ipsec
+
+
+-- Cifra de fluxo
+
+A um mapeamento bit a bit e você acaba gerando uma sequência de bits aleatórios
+
+-- Cifra de bloco
+
+Vou pegar um bloco de bits e vou permutalo, exemplo bloco de 64 bits e vou permutar a ordem deles por outro valor
+
+____________________________________________________________________________________________________
+
+Certificado Digital
+
+O que é certificar uma chave? Tem 2 pessoas tentanto se passar pelo bob, mais quem é a verdadeira?
+
+Para descobrir eu vou analisar a chave do bob, Quem garante isso é a Entidade certificadora
+
+____________________________________________________________________________________________________
+
+Padrões de autoridades certificadoras
+
+- IETF - recomndação ITUX.509
+Especificação de um serviço de autenticação e sintaxe de certificados
+
+- RFC 1422
+Gerenciamento de chaves baseado em CA em emails seguros.
+
+_____________________________________________________________________________________________________
+
+**********************************************************************************************************************
+
+aula 07 - Protocolo SSL - Secure Socket Layer
+
+O SSL é um protocolo de segurança de conexão, que funciona por cima do TCP, ele garante:
+
+- Seguranção para conexões TCP
+- Confidencialidade
+- Integridade
+- Autenticidade end-point
+
+O TLS é a 3º versão do SSL, TLS significa(Transport Layer Security(RFC4346))
+
+************************************************************************************************************************
+
+Aula 08 - Operação do SSL e considerações finais
+
+Operações do SSL:
+
+1º O handshake - A negociação vem na seguinte ordem
+
+1º ► Tcp start (envio tentando estabelecer conexão)
+2º ► Tcp response (resposta do servidor respondedo a solicitação conexão)
+3º ► Tco confirmation (a confirmação da conexão)
+Depois da conexãoo estabelecida vem as questões de autenticidade
+4º ► SSL Hello (verifica se está o registro do outro lado) 
+5º ► Certification(Possui a chave pública que vai servir para ser criado a MS(Master Secret Key))
+
+Master Secret Key
+
+Ela vai ser utilizada para descriptografar o conteúdo
+
+- Key Derivation - Não explicou
+- Data transfer - Não explicou
+
+_________________________________________________________________________________________________________________
+
+Breve descrição da LGPD
+
+É o HTTP + SSL
+
+Segurança na comunicação - HTTP Over TCP
+
+Verificação dea autenticidade por certificados digitais, utiliza a porta 443
+
+Significado palavra LGPD - Lei Geral de Proteção de dados
+
+► Promulgada em 2018
+► Entrou em vigor em Agosto de 2020
+► nº 13.709/2018
+
+O que a lei protege?
+
+► Dados de identificação dos usuários
+► Dados sensíveis: Religião, etina, entre outros
+► Define o tratamento de dados
+► Livre conssentimento
+► Direitos do titulas das informações
+► Sacões aos que descumprirem as regras
+
+Quem controla isso no brasil
+
+ANPD(Agencia Nacional de proteção de dados)
+
+► Zelar pela proteção dos dados
+► Elaboração de diretrizes para politica nacional de proteção
+► Promover conhecimento das normas
+► Editar regulamentos
+► Realizar auditorias
+
+Quem deve seguir a lei?
+
+► Empresas que precisam manter um BD de funcionários e usuários
+
+*******************************************************************************************************************
+
+Aula 09 - Contextualização
+
+Web Socket
+
+É uma única conexão apenas bidirecional via API, ele vem para resolver a questão da conexão quando se tem jogos, coisas em tempo real, porquê se fosse pelo método HTTP,
+Seria impossível.
+
+Portas: 80 e 443
+
+********************************************************************************************************************
+
+Aula 10 - Como funciona o WebSocket?
+
+o Websocket opera com 2 fases
+
+- Handshake de 2 vias só -> Envia oo SYN e RECEBE o SYN ACK e não tem o último ACK
+- Data transfer 
+
+Definição:
+
+O protocolo fornece comunicação clientes/servidor executando um código não confiável em um ambiente controladoo para o host que escolheu essa comunicação
+
+Filosofia do WebSocket
+
+ADD
+
+► Origin-base security model
+► Endereçamento e protocolo
+► Camadas -> Enqudramento on top TCP
+► Encerramento do handshake
+
+Outras Características:
+
+Porta 443
+
+*********************************************************************************************************************
+
+Aula 11 - Como ocorre a comunicação dentro da internet?
+
+►►► Dns(Domain name server):
+É a primeira camada que o cliente vai requisitar as informações para um servidor de domínio 
+
+►►► Load Balancer:
+Pode fazer distribuição de carga, verifica qual servidor está melhor
+Multiplexação, vai receber várias requisições HTTP e vai multiplexar várias requisições em uma mesma conexão como servidor HTTP
+
+********************************************************************************************************************
+
+Referências 
+
+Repositório no GitHub - Java HTTPCliente(opcional)
+Referências oficiais - RFCs
+
+RFC HTTP 1.1
+RFC HTTP 2.0
+RFC WebSocket
+
+
+
 
 */
