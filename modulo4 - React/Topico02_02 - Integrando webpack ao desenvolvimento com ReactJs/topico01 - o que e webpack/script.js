@@ -58,7 +58,9 @@ Depois deu um porrada de erros que não foram explicados na aula, segue o jogo v
 
 **************************************************************************************************
 
+Nslint
 
+Ele serve para verificar no código todos os erros, faltando ponto e vírgula por exemplo, função sem return entre outros.
 
 
 */
