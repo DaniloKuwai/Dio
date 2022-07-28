@@ -37,6 +37,7 @@ Configuração
 1º inicializar o projeto com o npm init
 2º para instalar o webpack - npm i -D webpack webpack-cli
 3º depois de instalado vamos criar um arquivo dentro da pasta do projeto chamado webpack.config.js
+4º nunca esquecer de deixar o arquivo webpack.config.js sempre no mesmo nível da pasta node_modules
 
 Comandos tirados da internet:
 
@@ -48,4 +49,20 @@ mkdir src                                    --> crie a pasta src
 cd src                                       --> entre na pasta src
 echo "console.log('hello world')" > index.js --> crie o arquivo main
 
+
+Agora instação do babel
+
+1º executar o seguinte comando| npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+
+Depois deu um porrada de erros que não foram explicados na aula, segue o jogo vamos aprendendo trabalhando.
+
+**************************************************************************************************
+
+
+
+
 */
+
+
+
+
