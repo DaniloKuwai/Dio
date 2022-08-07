@@ -1,0 +1,7 @@
+► Para apontar um novo repositório local para um novo repositório remoto fazer o seguinte comando
+
+git remote add origin endereço do repositório.
+
+► para confirmar digitar:
+
+git remote -v
